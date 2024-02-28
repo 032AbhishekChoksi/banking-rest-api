@@ -34,30 +34,36 @@ This project aims to build REST APIs for a simple Banking application using Spri
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/032AbhishekChoksi/banking-rest-api
-
+```
 
 2. Navigate to the project directory:
 
+```bash
 cd banking-rest-api
-
+```
 
 3. Update MySQL database configuration in `application.properties`:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/banking_db
+```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/banking_app
 spring.datasource.username=root
 spring.datasource.password=password
-
+spring.jpa.hibernate.ddl-auto=update
+```
 
 4. Build the project:
 
+```bash
 mvn clean install
-
+```
 
 5. Run the application:
 
+```bash
 java -jar target/banking-rest-api.jar
-
+```
 
 ## API Documentation
 
